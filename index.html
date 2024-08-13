@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rouisaek</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2614cca0b5.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
-    body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-}
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #000;
+      }
 
-.text-container {
-    display: flex;
-}
+      .wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-.letter {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #f0f0f0;
-    animation-fill-mode: both;
-    animation: bounce 1.5s infinite;
-}
+      .links-container {
+        width: 300px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 2px;
+      }
 
-.letter:nth-child(2n) {
-    color: #f0f0f0;
-}
+      .links-container a {
+        margin: 10px 0;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #7e47ff;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        margin: 5px;
+      }
 
-.letter:nth-child(odd) {
-    animation-delay: 0.6s;
-}
+      .github-container {
+        background-color: #333;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .twitter-container {
+        height: 100%;
+        width: 100%;
+        background-color: #1861ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text-container {
+        display: flex;
+      }
 
-.letter:nth-child(even) {
-    animation-delay: 0.3s;
-}
+      .letter {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #fff;
+        animation-fill-mode: both;
+        animation: bounce 1.5s infinite;
+      }
 
-.space {
-    width: 0.5rem;
-}
+      .letter:nth-child(2n) {
+        color: #fff;
+      }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);        
-    }
-    50% {        
-        transform: translateY(-10px);
-    }
-}
+      .letter:nth-child(odd) {
+        animation-delay: 0.6s;
+      }
+
+      .letter:nth-child(even) {
+        animation-delay: 0.3s;
+      }
+
+      .space {
+        width: 0.5rem;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
     </style>
-</head>
-<body>
-    <div class="text-container">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="text-container">
         <div class="letter">I</div>
-        <div class="letter">n</div>       
+        <div class="letter">n</div>
         <div class="letter">P</div>
         <div class="letter">r</div>
         <div class="letter">o</div>
@@ -68,6 +124,21 @@
         <div class="letter">e</div>
         <div class="letter">s</div>
         <div class="letter">s</div>
+      </div>
+      <div class="links-container">
+        <a
+          class="github-container"
+          href="https://github.com/rouisaek"
+          target="_blank"
+          ><i class="fa-brands fa-github" style="color: #fff"></i
+        ></a>
+        <a
+          class="twitter-container"
+          href="https://x.com/rouisaek_"
+          target="_blank"
+          ><i class="fa-brands fa-twitter" style="color: #fff"></i
+        ></a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
